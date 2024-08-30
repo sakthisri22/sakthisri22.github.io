@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .highlight {
+            color: rgb(0, 21, 255);
+            text-decoration: underline;
+        }
+        
+        .hidden-content {
+            display: none;
+        }
+        
+        li {
+            display: inline;
+            font-size: 30px;
+        }
+        
+        .navi {
+            padding: 40px;
+            background-color: rgb(227, 224, 219);
+        }
+    </style>
+
+</head>
+
+<body style="background-color: black;">
+
+    <header>
+        <h1 style="text-align:center;font-size:70px;font-weight:600;background-image:linear-gradient(to left, #553c9a, #b393d3);color: transparent;background-clip:text;-webkit-background-clip: text;">Portfolio</h1>
+        <p lang="en" style="color:blueviolet;text-align:center">Web Developer | Designer | Programmer</p>
+    </header>
+
+    <nav>
+        <ul style="margin-left: 50%;">
+            <li><a href="#about" accesskey="a" target="_self">About Me |</a></li>
+            <li><a href="#projects" accesskey="p" target="_self">Projects |</a></li>
+            <li><a href="#contact" accesskey="c" target="_self">Contact |</a></li>
+            <li><a href="#register" accesskey="c" target="_self">Registeration form</a></li>
+
+        </ul>
+
+    </nav>
+
+    <section id="about">
+        <h2 style="font-size:30px;padding:2px;background-color:blue;">About Me</h2>
+        <p style="padding: 40px;background-color: rgb(227, 224, 219);">Hi, I'm Sakthi Sri and completed B.tech IT .I am a passionate web developer with experience in creating dynamic and responsive websites.</p>
+    </section>
+    <h2 style="font-size:30px;padding: 2px;background-color:blue;">Projects</h2>
+    <div style="padding:40px;background-color:rgb(227, 224, 219);">
+        <section id="projects">
+            <div draggable="true">
+                <h3>Project 1</h3>
+                <p data-description="A web application built using HTML, CSS, and JavaScript.">
+                    A web application showcasing currency convertor.
+                </p>
+                <p>
+                    <a href="https://sakthisri22.github.io/currency-convertor-1/" target="_blank" rel="noopener" class="highlight" type="text/html" hreflang="en" referrerpolicy="no-referrer" ping="https://www.tracker.com/ping">
+                    Visit Project 1
+                </a>
+                </p>
+            </div>
+            <div draggable="true">
+                <h3>Project 2</h3>
+                <p data-description="A mobile app developed with React Native.">
+                    A webpage that shows tic tae toe game page for playing .
+                </p>
+                <p>
+                    <a href="https://sakthisri22.github.io/tic-tac-toe/" download="Project2Source.zip" class="highlight">
+                    visit project 2
+                </a>
+                </p>
+            </div>
+        </section>
+    </div>
+    <section id="contact">
+        <h2 style="font-size:30px;padding: 2px;background-color:blue;">Contact</h2>
+        <form style="padding:20px;background-color:rgb(227, 224, 219);">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" spellcheck="true">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" spellcheck="true">
+            <br><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <div class="hidden-content" hidden>
+        <p>This content is hidden by default.</p>
+    </div>
+
+    <footer>
+        <p style="color:white ;">&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+    <center>
+        <div>
+            <h1 style="padding: 2px;background-color: blue;">Registeration form</h1>
+            <forms style="color:whitesmoke">
+                <label for="">First Name:</label>
+                <input type="text" name="firstname" id="firstname" required autofocus="true" autocomplete="true" placeholder="First Name"><br><br>
+                <label for="">Last Name:</label>
+                <input type="text" name="lasttname" id="lasttname" required placeholder="Last Name"><br><br>
+                <label for=" ">Email:</label>
+                <input type="email" name="Email" id="Email" required placeholder="Email"><br><br>
+                <label for="">Create Password:</label>
+                <input type="password" name="password" id="password" pattern=".{8,}" title="password must be Eight or more characters" required placeholder="password"><br><br>
+                <label for=" ">DOB:</label>
+                <input type="date" name="DOB " id="DOB " required><br><br>
+                <label for=" ">Gender:</label>
+                <input type="radio" name="gender "> Male
+                <input type="radio" name="gender "> Female<br><br>
+                <label for=" ">Skills:</label>
+                <input type="CheckBox" name="languages" id="languages">python<br>
+                <input type="CheckBox" name="languages" id="languages">c++<br>
+                <input type="CheckBox" name="languages" id="languages">c<br><br>
+                <label for=" ">State:</label>
+                <select>       
+                <option value="1">Andhra Pradesh</option>
+                <option value="2">Delhi</option>
+                <option value="3">Kerala</option>
+                <option value="4">Tamilnadu</option>
+            </select><br><br>
+                <label for=" ">City:</label>
+                <select>
+                <option>chennai</option>
+                <option>bangalore</option>
+                <option selected>madurai</option>
+                <option>kochi</option>
+            </select><br><br>
+                <input type="submit">
+            </forms>
+        </div>
+    </center>
+</body>
+
+
+</html>
